@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+
+<h2>Contact</h2>
+<h2>@ViewData["Info"]</h2>
+
+
+
+<ul>   
+    @{ foreach (string i in (string[])TempData["IndCricketers"])
+        {
+            <li>@i</li>
+        }
+    }
+</ul>
+<!--TempData Only Use with redirection and retain data to subsequent request only and we can use Keep() method to retain its data for one more request in current action Mathod-->
+
+<p>@Session["Mssg"]</p>
+
+

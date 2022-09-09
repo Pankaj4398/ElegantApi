@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<p>My First Asp.net MVC Project</p>
+
+<h2>@ViewData["Info"]</h2>
+<ul>
+    @{ 
+        foreach (string i in ViewBag.ArrayCrics)
+        {
+                <li>@i</li>
+        }
+    }
+</ul>
+
+<ol>
+    @{ foreach (string i in (string[])TempData["IndCricketers"])
+        {
+                <li>@i</li>
+        }
+    }
+</ol>
+
+<p>@Session["Mssg"]</p>
+
+
