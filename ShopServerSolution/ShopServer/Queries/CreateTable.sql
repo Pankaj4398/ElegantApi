@@ -93,3 +93,15 @@ CREATE TABLE OrderItems (
     order_id uniqueidentifier FOREIGN KEY REFERENCES Users(id),
 	product_id uniqueidentifier FOREIGN KEY REFERENCES Product(id)
 );
+
+--Above one mistake order_id forgein key of OrderDetails mapped from Users table -- Wrong refential integrity
+
+drop table OrderItems
+
+CREATE TABLE OrderItems (
+    id uniqueidentifier PRIMARY KEY,
+	created_at date NOT NULL,
+	modified_at date NOT NULL,
+    order_id uniqueidentifier FOREIGN KEY REFERENCES OrderDetails(id),
+	product_id uniqueidentifier FOREIGN KEY REFERENCES Product(id)
+);
