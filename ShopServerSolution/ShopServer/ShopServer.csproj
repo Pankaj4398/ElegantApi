@@ -11,8 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DomainModel\" />
     <Folder Include="DbContext\" />
+    <Folder Include="Model\Domain\" />
+    <Folder Include="Automapper\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Repository\" />
     <Folder Include="Queries\" />
   </ItemGroup>
 
