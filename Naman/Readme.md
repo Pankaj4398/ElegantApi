@@ -70,3 +70,5 @@ Middleware are the softwares which are added in the project pipeline to handle r
 4. Each URL define a specific resource and http verbs are used tro perform action on these resources.
 5. REST follows stateless style of architexture, that means server should not store client state between requests and client should provide each and every information with each request.
 
+
+db reference - "https://user-images.githubusercontent.com/36097162/236610117-425903b3-88da-4064-9fb2-10903c42cfd5.png"
