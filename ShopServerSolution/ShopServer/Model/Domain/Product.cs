@@ -2,7 +2,7 @@
 {
     public class Product
     {
-        public int id { get; set; }
+        public Guid id { get; set; }
         public string name { get; set; }
         public decimal price { get; set; }
         public string description { get; set; }
@@ -12,7 +12,7 @@
         public DateTime modified_at { get; set; }
         public Guid discount_id { get; set; }
         // Navigation property
-        public Discount Discount { get; set; }
+        public Discount discount { get; set; }
 
     }
 }
