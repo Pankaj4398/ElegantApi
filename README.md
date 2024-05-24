@@ -2,4 +2,4 @@
 
 # Database design
 
-![image](ShopServerSolution/ShopServer/Assets/DatabaseDiagramDatatypeandNullable.png.png)
+![image](ShopServerSolution/ShopServer/Assets/DatabaseDiagramDatatypeandNullable.png)
