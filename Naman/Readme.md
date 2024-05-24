@@ -42,5 +42,26 @@ So when you compile your application the compiler builds one or more assemblies 
 
 A class is a blueprint for creating objects which contains attributes and features.
 
+## Solution
+It provides architecture for organizing projects inside visual studio
+One solution can have multiple projects
+
+## Poject
+Project is a structure for organizing files and in a single project
+It contains project information and the nuget package references when added would be displayed here
+
+## launchSettings.json
+Contains launch related information, profiles and launch urls
+
+## appsettings.json
+It is used to store the configurations of the application, log levels and connection strings reside in this file
+
+## Program.cs
+It is the entry point of the application, here we add the dependencies used in our project and add the middlewares
+
+## Middleware
+Middleware are the softwares which are added in the project pipeline to handle request and responses
+
+ 
 
 
