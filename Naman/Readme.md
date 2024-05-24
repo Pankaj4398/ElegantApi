@@ -2,39 +2,39 @@
 
 ## C# vs .Net
 
-• C# is a programming language
-• .NET is a framework for building applications on windows
-• .Net is not limited to C# there are many languages that can target .NET framework and build applications example F# and VB.NET
+â€¢ C# is a programming language
+â€¢ .NET is a framework for building applications on windows
+â€¢ .Net is not limited to C# there are many languages that can target .NET framework and build applications example F# and VB.NET
 
 ## .NET
 
-• .NET framework consist of two components one is called CLR(Common language runtime) and the other is a class library for building applications
+â€¢ .NET framework consist of two components one is called CLR(Common language runtime) and the other is a class library for building applications
 
 ## CLR
-• When you compile your C# code the result is called IL or intermediate language code
-• which is independent of the computer on which it is running
-• Now to convert this IL code to native code or the machine code for the machine that is running
-• That is done by CLR(Common Language Runtime)
-• So CLR is an application that is sitting in the memory whose job is to translate the IL code into the machine code and this process is call JIT(Just in time compilation)
-• So with this process you can compile your code in one machine and you don't need to worry about running your code on different machine as long as a machine has CLR
+â€¢ When you compile your C# code the result is called IL or intermediate language code
+â€¢ which is independent of the computer on which it is running
+â€¢ Now to convert this IL code to native code or the machine code for the machine that is running
+â€¢ That is done by CLR(Common Language Runtime)
+â€¢ So CLR is an application that is sitting in the memory whose job is to translate the IL code into the machine code and this process is call JIT(Just in time compilation)
+â€¢ So with this process you can compile your code in one machine and you don't need to worry about running your code on different machine as long as a machine has CLR
  
 ## Architecture of .NET Application
-• Your application consists of building blocks called classes
-• These classes collaborate at the runtime and as a result gives some functinality
+â€¢ Your application consists of building blocks called classes
+â€¢ These classes collaborate at the runtime and as a result gives some functinality
 
 ### Class
-• A class is a container which containes data called attributes and functions which is also called methods
+â€¢ A class is a container which containes data called attributes and functions which is also called methods
 
 ### Namespace
-• As the number of classes grows we need to organize these classes so we need a namespace
-• A namespace is a container for related classes
+â€¢ As the number of classes grows we need to organize these classes so we need a namespace
+â€¢ A namespace is a container for related classes
 
 
 ### Assembly
 
-• As the number of namespaces grow we need a way to partition our application that is why we use an assembly
-• An assembly is a container for related namespaces
-• Physically it is a file on the disk which can either be an executable(.exe) or a DLL(Dynamically Linked Library)
+â€¢ As the number of namespaces grow we need a way to partition our application that is why we use an assembly
+â€¢ An assembly is a container for related namespaces
+â€¢ Physically it is a file on the disk which can either be an executable(.exe) or a DLL(Dynamically Linked Library)
 
 So when you compile your application the compiler builds one or more assemblies depending on how you partition your code
 
@@ -46,7 +46,7 @@ A class is a blueprint for creating objects which contains attributes and featur
 It provides architecture for organizing projects inside visual studio
 One solution can have multiple projects
 
-### Poject
+### Project
 Project is a structure for organizing files and in a single project
 It contains project information and the nuget package references when added would be displayed here
 
