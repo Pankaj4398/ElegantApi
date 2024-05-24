@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <Folder Include="DbContext\" />
-    <Folder Include="Model\Domain\" />
     <Folder Include="Automapper\" />
     <Folder Include="Repository\" />
     <Folder Include="Queries\" />
