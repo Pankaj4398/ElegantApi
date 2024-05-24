@@ -15,6 +15,7 @@ namespace ElegentAPINMN.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<ShoppingSession> ShoppingSessions { get; set; }
         public DbSet<Users> Users { get; set; }
+        public DbSet<DiscountProduct> DiscountProduct { get; set; }
 
     }
 }
