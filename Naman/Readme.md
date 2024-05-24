@@ -62,7 +62,7 @@ It is the entry point of the application, here we add the dependencies used in o
 ### Middleware
 Middleware are the softwares which are added in the project pipeline to handle request and responses
 
- 
+
 # REST (Representational State Transfer)
 1. It is a style of architecture for building web services.
 2. REST is a set of principles that define how services should be designed and interact with each other.
