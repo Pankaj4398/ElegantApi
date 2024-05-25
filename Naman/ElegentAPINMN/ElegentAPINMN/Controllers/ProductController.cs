@@ -31,6 +31,8 @@ namespace ElegentAPINMN.Controllers
             
             //map data to DTO
             var productsDto = _mapper.Map<List<ProductDto>>(products);
+            
+            //return DTO
             return Ok(productsDto);
         }
 
@@ -38,8 +40,14 @@ namespace ElegentAPINMN.Controllers
         [Route("{id:Guid}")]
         public async Task<IActionResult> GetById([FromRoute] Guid id)
         {
+            //Get Data
             var product = await _productRepository.GetByIdAsync(id);
-            return Ok(product);
+            
+            //map to DTO
+            var productDTO = _mapper.Map<ProductDto>(product);
+            
+            //return DTO
+            return Ok(productDTO);
         }
 
         [HttpPost]
