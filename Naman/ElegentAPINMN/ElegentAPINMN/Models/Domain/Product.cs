@@ -10,8 +10,5 @@
         public string sku { get; set; }
         public DateTime Modified_At { get; set; }
 
-        public Guid DiscountId { get; set; }
-
-        public Discount Discount { get; set; }
     }
 }

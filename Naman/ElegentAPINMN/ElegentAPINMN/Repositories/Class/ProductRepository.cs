@@ -41,7 +41,6 @@ namespace ElegentAPINMN.Repositories.Class
                 existingProduct.Category = product.Category;
                 existingProduct.sku = product.sku;
                 existingProduct.Modified_At = product.Modified_At;
-                existingProduct.DiscountId = product.DiscountId;
 
                 await _dbContext.SaveChangesAsync();
                 return existingProduct;

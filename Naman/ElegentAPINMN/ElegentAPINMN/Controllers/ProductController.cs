@@ -51,9 +51,11 @@ namespace ElegentAPINMN.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateProduct([FromBody] Product product)
+        public async Task<IActionResult> CreateProduct([FromBody] ProductDto product)
         {
-            var res = await _productRepository.CreateAsync(product);
+            //convert productdto to product
+            var productData = _mapper.Map<Product>(product);
+            var res = await _productRepository.CreateAsync(productData);
             return Ok(res);
         }
 
