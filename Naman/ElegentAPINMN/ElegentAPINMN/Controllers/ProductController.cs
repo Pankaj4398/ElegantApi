@@ -1,5 +1,7 @@
-﻿using ElegentAPINMN.Data;
+﻿using AutoMapper;
+using ElegentAPINMN.Data;
 using ElegentAPINMN.Models.Domain;
+using ElegentAPINMN.Models.DTO;
 using ElegentAPINMN.Repositories.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,11 +15,13 @@ namespace ElegentAPINMN.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IProductRepository _productRepository;
+        private readonly IMapper _mapper;
 
-        public ProductController(ApplicationDbContext dbContext, IProductRepository productRepository)
+        public ProductController(ApplicationDbContext dbContext, IProductRepository productRepository, IMapper mapper)
         {
             _context = dbContext;
             this._productRepository = productRepository;
+            this._mapper = mapper;
         }
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -26,8 +30,8 @@ namespace ElegentAPINMN.Controllers
             var products = await _productRepository.GetAllAsync();
             
             //map data to DTO
-
-            return Ok(products);
+            var productsDto = _mapper.Map<List<ProductDto>>(products);
+            return Ok(productsDto);
         }
 
         [HttpGet]
