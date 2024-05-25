@@ -55,24 +55,43 @@ namespace ElegentAPINMN.Controllers
         {
             //convert productdto to product
             var productData = _mapper.Map<Product>(product);
+
+            //create the product
             var res = await _productRepository.CreateAsync(productData);
-            return Ok(res);
+
+            //convert res to the DTO
+            var productDTO = _mapper.Map<ProductDto>(res);
+
+            // return product DTO
+            return Ok(productDTO);
         }
 
         [HttpPut]
         [Route("{id:Guid}")]
-        public async Task<IActionResult> UpdateProduct([FromRoute] Guid id, [FromBody] Product product)
+        public async Task<IActionResult> UpdateProduct([FromRoute] Guid id, [FromBody] ProductDto productDto)
         {
+            //convert productDTO to product
+            var product = _mapper.Map<Product>(productDto);
+
+            //update the product
             var res = await _productRepository.UpdateAsync(id, product);
-            return Ok(res);
+
+            //convert product to productDTO
+            var resProductDTO = _mapper.Map<ProductDto>(res);
+            return Ok(resProductDTO);
         }
 
         [HttpDelete]
         [Route("{id:Guid}")]
         public async Task<IActionResult> DeleteProduct([FromRoute] Guid id)
         {
+            //get the product
             var res = await _productRepository.DeleteAsync(id);
-            return Ok(res);
+
+            //convert product to productDTO
+            var resProductDTO = _mapper.Map<ProductDto>(res);
+
+            return Ok(resProductDTO);
         }
     }
 }
