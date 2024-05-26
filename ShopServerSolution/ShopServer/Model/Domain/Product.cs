@@ -10,9 +10,5 @@
         public string category { get; set;}
         public DateTime created_at { get; set; }
         public DateTime modified_at { get; set; }
-        public Guid discount_id { get; set; }
-        // Navigation property
-        public Discount discount { get; set; }
-
     }
 }

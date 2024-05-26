@@ -13,6 +13,7 @@
   <ItemGroup>
     <Folder Include="DbContext\" />
     <Folder Include="Automapper\" />
+    <Folder Include="Model\DTO\" />
     <Folder Include="Repository\" />
     <Folder Include="Queries\" />
   </ItemGroup>

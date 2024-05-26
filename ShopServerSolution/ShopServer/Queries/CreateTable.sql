@@ -105,3 +105,20 @@ CREATE TABLE OrderItems (
     order_id uniqueidentifier FOREIGN KEY REFERENCES OrderDetails(id),
 	product_id uniqueidentifier FOREIGN KEY REFERENCES Product(id)
 );
+
+-- Two tables more require and product table discount_id remove direct relationship
+
+CREATE TABLE DiscountProduct (
+	id uniqueidentifier PRIMARY KEY,
+	product_id uniqueidentifier FOREIGN KEY REFERENCES Product(id),
+	discount_id uniqueidentifier FOREIGN KEY REFERENCES Discount(id)
+)
+
+CREATE TABLE ImageProduct (
+	id uniqueidentifier PRIMARY KEY,
+	product_id uniqueidentifier FOREIGN KEY REFERENCES Product(id),
+	image_url varchar(255)
+)
+
+ALTER TABLE Product 
+DROP COLUMN discount_id;
