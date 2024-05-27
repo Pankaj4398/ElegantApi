@@ -17,6 +17,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
+builder.Services.AddScoped<ICartItemRepository, CartItemRepository>();
 builder.Services.AddAutoMapper(typeof(MappingProfiles));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

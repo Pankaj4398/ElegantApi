@@ -13,16 +13,15 @@ namespace ElegentAPINMN.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
         private readonly IProductRepository _productRepository;
         private readonly IMapper _mapper;
 
-        public ProductController(ApplicationDbContext dbContext, IProductRepository productRepository, IMapper mapper)
+        public ProductController(IProductRepository productRepository, IMapper mapper)
         {
-            _context = dbContext;
             this._productRepository = productRepository;
             this._mapper = mapper;
         }
+
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

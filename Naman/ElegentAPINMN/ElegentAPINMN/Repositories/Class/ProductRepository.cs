@@ -19,9 +19,14 @@ namespace ElegentAPINMN.Repositories.Class
             return await _dbContext.Products.ToListAsync();
         }
 
-        public async Task<Product> GetByIdAsync(Guid Id)
+        public async Task<Product?> GetByIdAsync(Guid Id)
         {
-            return await _dbContext.Products.FirstOrDefaultAsync(x => x.Id == Id);
+            var res = await _dbContext.Products.FirstOrDefaultAsync(x => x.Id == Id);
+            if(res == null)
+            {
+                return null;
+            }
+            return res;
         }
 
         public async Task<Product> CreateAsync(Product product)
@@ -30,7 +35,7 @@ namespace ElegentAPINMN.Repositories.Class
             await _dbContext.SaveChangesAsync();
             return product;
         }
-        public async Task<Product> UpdateAsync(Guid Id, Product product)
+        public async Task<Product?> UpdateAsync(Guid Id, Product product)
         {
             var existingProduct =  await _dbContext.Products.FirstOrDefaultAsync(x=>x.Id == Id);
             if(existingProduct != null)

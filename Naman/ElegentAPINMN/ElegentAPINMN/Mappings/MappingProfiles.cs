@@ -9,6 +9,7 @@ namespace ElegentAPINMN.Mappings
         public MappingProfiles()
         {
             CreateMap<Product, ProductDto>().ReverseMap();
+            CreateMap<Discount, DiscountDto>().ReverseMap();
         }
     }
 }
