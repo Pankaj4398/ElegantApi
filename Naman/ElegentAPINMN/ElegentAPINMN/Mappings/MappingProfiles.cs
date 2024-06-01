@@ -10,6 +10,7 @@ namespace ElegentAPINMN.Mappings
         {
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<Discount, DiscountDto>().ReverseMap();
+            CreateMap<CartItem, CartItemDto>().ReverseMap();
         }
     }
 }
