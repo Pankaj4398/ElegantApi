@@ -63,12 +63,35 @@ It is the entry point of the application, here we add the dependencies used in o
 Middleware are the softwares which are added in the project pipeline to handle request and responses
 
 
-# REST (Representational State Transfer)
+### REST (Representational State Transfer)
 1. It is a style of architecture for building web services.
 2. REST is a set of principles that define how services should be designed and interact with each other.
 3. It is based of the concept of resources, a resource is anything that can be identified and manipulated through web service.
 4. Each URL define a specific resource and http verbs are used tro perform action on these resources.
 5. REST follows stateless style of architexture, that means server should not store client state between requests and client should provide each and every information with each request.
 
+### ORM(Object Relation Model) 
+1. ORM connects object oriented programming to relational databases.
+2. ORM simplifies the interaction with database.
+
+### Entity Framework
+1. Entity Framework is a ORM framework.
+2. EFCore supports two development approaches 1. Code First 2. Database First
+
+### Dapper
+1. Dapper is a micro ORM.
+2. Dapper is used to map queries to objects.
+3. Dapper does not do SQL generation, cache results and other features that ORM like EFCore provides that is why it is called micro ORM.
+
+### DbContext
+1. DbContext is used to reporesent a session with the database and can be used to query and save instance of your entities.
+2. DbContext is used for 
+    1. Manage database connection
+    2. Configure model & relationship
+    3. Querying database
+    4. Saving data to the database
+    5. Configure change tracking
+    6. Caching
+    7. Transaction management
 
 db reference - "https://user-images.githubusercontent.com/36097162/236610117-425903b3-88da-4064-9fb2-10903c42cfd5.png"

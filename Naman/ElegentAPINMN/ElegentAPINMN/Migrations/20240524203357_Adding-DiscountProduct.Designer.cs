@@ -4,6 +4,7 @@ using ElegentAPINMN.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElegentAPINMN.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240524203357_Adding-DiscountProduct")]
+    partial class AddingDiscountProduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,27 +79,6 @@ namespace ElegentAPINMN.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Discounts");
-                });
-
-            modelBuilder.Entity("ElegentAPINMN.Models.Domain.DiscountProduct", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
-
-                    b.Property<Guid>("DiscountId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("char(36)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DiscountId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("DiscountProduct");
                 });
 
             modelBuilder.Entity("ElegentAPINMN.Models.Domain.OrderDetails", b =>
@@ -205,6 +187,9 @@ namespace ElegentAPINMN.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<Guid>("DiscountId")
+                        .HasColumnType("char(36)");
+
                     b.Property<DateTime>("Modified_At")
                         .HasColumnType("datetime(6)");
 
@@ -220,6 +205,8 @@ namespace ElegentAPINMN.Migrations
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DiscountId");
 
                     b.ToTable("Products");
                 });
@@ -305,25 +292,6 @@ namespace ElegentAPINMN.Migrations
                     b.Navigation("ShoppingSession");
                 });
 
-            modelBuilder.Entity("ElegentAPINMN.Models.Domain.DiscountProduct", b =>
-                {
-                    b.HasOne("ElegentAPINMN.Models.Domain.Discount", "Discount")
-                        .WithMany()
-                        .HasForeignKey("DiscountId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ElegentAPINMN.Models.Domain.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Discount");
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("ElegentAPINMN.Models.Domain.OrderDetails", b =>
                 {
                     b.HasOne("ElegentAPINMN.Models.Domain.PaymentDetails", "PaymentDetails")
@@ -360,6 +328,17 @@ namespace ElegentAPINMN.Migrations
                     b.Navigation("OrderDetails");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("ElegentAPINMN.Models.Domain.Product", b =>
+                {
+                    b.HasOne("ElegentAPINMN.Models.Domain.Discount", "Discount")
+                        .WithMany()
+                        .HasForeignKey("DiscountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Discount");
                 });
 
             modelBuilder.Entity("ElegentAPINMN.Models.Domain.ShoppingSession", b =>
