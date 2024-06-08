@@ -94,4 +94,116 @@ Middleware are the softwares which are added in the project pipeline to handle r
     6. Caching
     7. Transaction management
 
+
+## Authentication
+The process to determine a user's identity using username and password, it checks if we trust the user
+
+## Authorization
+1. It specifies if user has permission to perform certain action
+2. Users are given permission based on roles, policies, claims
+
+## Authentication flow
+1. Server creates JWT token and pass it to client.
+2. JWT(Json Web Token) is an compact and self-contained way for securely transmitting information between parties as a JSON object.
+3. Client first sends the username and password to the API and API returns JWT token then the client uses this JWT token to make the calls and API verifies this JWT token on each call if the JWT token is right then it returns the data else no data is retruned.
+
+## Packages Required for setting up of Authentication
+1. Microsoft.AspNetCore.Authentication.JwtBearer
+2. Microsoft.IdentityModel.Tokens
+3. System.IdentityModel.Tokens.Jwt
+4. Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+## Process to add Authentication
+1. Add the JWT configurations in the appsettings.json
+    ```Javascript
+        "Jwt": {
+        "Key": "lksadjfkljagioherohgljksdglkjsdkljfgsdjkgoifjeriojgklsdfjlkjdslkjfd",
+        "Issuer": "https://localhost:7147",
+        "Audience": "https://localhost:7147",
+        }
+    ```
+
+2. Add the AddAuthentication service inside program.cs
+```C#
+    builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+    });
+```
+
+3. Before the Authorization middleware add UseAuthentication middleware
+```C#
+    app.UseAuthentication();
+    app.UseAuthorization();
+```
+
+4. Add a new DbContext for the authentication 
+    1. Create a new Authentication connection string
+        ```Javascript
+            "ShopAuthConnection": "Server=localhost;Database=ShopAuthDb;User=root;Password=*october2020"
+        ```
+    2. Add the new DbContext
+        ```C#
+                public class ShopAuthDbContext : IdentityDbContext
+                {
+                    public ShopAuthDbContext(DbContextOptions<ShopAuthDbContext> options): base(options) 
+                    {
+
+                    }
+                }
+        ```
+    3. Register the new DbContext
+        ```C#
+            builder.Services.AddDbContext<ShopAuthDbContext>(options =>
+            {
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(AuthConnectionString));
+            });
+        ```
+
+5. Add the roles 
+    ```C#
+            protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+            var customerRoleId = "11df2da6-10ef-4b25-a24a-324d17ec7cfd";
+            var adminRoleId = "45ec6e0b-9541-4954-b4a1-94250dd4cbc7";
+
+            var roles= new List<IdentityRole>
+            {
+                new IdentityRole
+                {
+                    Id = customerRoleId,
+                    ConcurrencyStamp = customerRoleId,
+                    Name = "Customer",
+                    NormalizedName = "Customer".ToUpper()
+                },
+
+                new IdentityRole
+                {
+                    Id = adminRoleId,
+                    ConcurrencyStamp = adminRoleId,
+                    Name = "Admin",
+                    NormalizedName = "Admin".ToUpper()
+                }
+            };
+
+            builder.Entity<IdentityRole>().HasData(roles);
+        }
+    ```
+
+6. Run the migrations but with specifying the DbContext
+    ```C#
+        Add-Migration "Creating Auth Database" -Context "ShopAuthDbContext"
+        Update-Database -Context "ShopAuthDbContext"
+    ```
+
+
+
 db reference - "https://user-images.githubusercontent.com/36097162/236610117-425903b3-88da-4064-9fb2-10903c42cfd5.png"
