@@ -204,6 +204,23 @@ The process to determine a user's identity using username and password, it check
         Update-Database -Context "ShopAuthDbContext"
     ```
 
+7. Add identity service in program.cs
+    ```C#
+        builder.Services.AddIdentityCore<IdentityUser>()
+            .AddRoles<IdentityRole>()
+            .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>("Shop")
+            .AddEntityFrameworkStores<ShopAuthDbContext>()
+            .AddDefaultTokenProviders();
 
+        builder.Services.Configure<IdentityOptions>(options =>
+        {
+            options.Password.RequireDigit = false;
+            options.Password.RequireLowercase = false;
+            options.Password.RequireNonAlphanumeric = false;
+            options.Password.RequireUppercase = false;
+            options.Password.RequiredLength = 6;
+            options.Password.RequiredUniqueChars = 1;
+        });
+    ```
 
 db reference - "https://user-images.githubusercontent.com/36097162/236610117-425903b3-88da-4064-9fb2-10903c42cfd5.png"
