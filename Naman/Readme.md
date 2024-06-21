@@ -223,4 +223,94 @@ The process to determine a user's identity using username and password, it check
         });
     ```
 
-db reference - "https://user-images.githubusercontent.com/36097162/236610117-425903b3-88da-4064-9fb2-10903c42cfd5.png"
+
+## Class, methods and property
+
+```C#
+    public class Car{
+        public string Name {get; set;}
+        public string Mileage {get; set;}
+    }
+
+    public static void Main(string[] args){
+        Car myCar = new Car();
+        myCar.Name = "Maruti";
+        Console.WriteLine(myCar.Name); //Maruti
+        Console.WriteLine(myCar.Mileage); //0- default value of that datatype
+        Console.WriteLine(myCar.gePrice); //100
+
+        public int getPrice(){
+            return 100;
+        }
+    }
+```
+
+## C# data types
+
+### Value types
+1. Integer
+2. Float
+3. Boolean
+4. Enum
+5. Nullable
+6. Struct
+
+### Reference types
+1. Class
+2. Interface
+3. Array
+4. Delegates
+
+## Difference between Parse() and tryParse()
+
+1. TryParse returns False when not able to convert but Parse throws error
+2. In TryParse you need to provide the out parameter but not in Parse
+
+## Structures
+
+Struct is a value type data type that represent a data structure. It can contain constants, fields, parameterized constructors, static constructors,  methods, properties, operators
+
+## Difference between struct and class
+
+1. Struct is value type - stored in stack and class is reference type strored in heap
+2. Struct cannot have explicit parameterless constructor, class can have parameterless constructor
+3. Struct does not support inheritance except from when implementation of interface, class supports inheritance
+4. Struct are more efficient in memory allocation because they are stored in stack, but not for large data
+
+## Enum
+
+Enum are used to assign names to a group of integers
+``` C#
+    enum WeekDays
+    {
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
+    Console.WriteLine(WeekDays.Tuesday); //Tuesday
+    int day = (int) Weekdays.Tuesday; //1
+    var weekday = (WeekDays)5; //Saturday
+```
+## Passing string as a parameter in function
+```C#
+    static void ChangeReferenceType(string name)
+    {
+        name = "Steve";
+    }
+
+    static void Main(string[] args)
+    {
+        string name = "Bill";
+    
+        ChangeReferenceType(name);
+
+        Console.WriteLine(name);
+    }
+```
+Output - Bill
+because here we are passing the string and string is reference type but it is immutable so compiler creates a new copy of string so original string value is mantained
+
