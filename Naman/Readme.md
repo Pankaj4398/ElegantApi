@@ -295,6 +295,7 @@ Enum are used to assign names to a group of integers
     int day = (int) Weekdays.Tuesday; //1
     var weekday = (WeekDays)5; //Saturday
 ```
+
 ## Passing string as a parameter in function
 ```C#
     static void ChangeReferenceType(string name)
@@ -314,3 +315,106 @@ Enum are used to assign names to a group of integers
 Output - Bill
 because here we are passing the string and string is reference type but it is immutable so compiler creates a new copy of string so original string value is mantained
 
+
+
+## Basic questions on list manipulation 
+```C#
+    using System;
+    using System.Collections.Generic;
+    class HelloWorld
+    {
+    static int findPeak (List < int >arr)
+    {
+	    int len = arr.Count;
+	    if (arr[0] > arr[1])
+	    {
+		    return 1;
+	    }
+	    else if (arr[len - 1] > arr[len - 2])
+	    {
+		    return len - 1;
+	    }
+	    for (int i = 1; i < len - 1; i++)
+	    {
+		    int j = i - 1;			//left element
+		    int k = i + 1;			//right element
+		    if (arr[i] > arr[j] && arr[i] > arr[k])
+		    {
+			    return i + 1;
+		    }
+	    }
+	    return 0;
+    }
+
+    static int findMax (List < int >arr)
+    {
+	    arr.Sort ();
+	    return arr[arr.Count - 1];
+    }
+
+    static int findMin (List < int >arr)
+    {
+	    arr.Sort ();
+	    return arr[0];
+    }
+
+    static void reverseArr (List < int >arr)
+    {
+	    int end = arr.Count;
+	    int start = 0;
+	    int temp;
+	    while (start < end)
+	    {
+		    temp = arr[start];
+		    arr[start] = arr[end];
+		    arr[end] = temp;
+		    start++;
+		    end--;
+	      }
+    }
+
+    static void Main ()
+    {
+	    List < int >arr = new List < int >{ 10, 2, 3, 4, 11, 5, 6, 4 };
+	    // Console.WriteLine(reverseArr(arr));
+	    reverseArr (arr);
+	    Console.WriteLine (findPeak (arr));
+	    Console.WriteLine (findMax (arr));
+	    Console.WriteLine (findMin (arr));
+        }
+    }
+```
+
+## Selection Sort
+```C#
+    using System;
+    using System.Collections.Generic;
+    class HelloWorld
+    {
+    static List<int> sortList (List < int >arr)
+    {
+
+        for(int i=0;i<arr.Count-1;i++){
+            int smallestIndex = i;
+            for(int j=i+1;j<arr.Count-1;j++){
+                if(arr[j]<arr[smallestIndex]){
+                    smallestIndex = j;
+                }
+            }
+            int temp = arr[i];
+            arr[i] = arr[smallestIndex];
+            arr[smallestIndex] = temp;
+        }
+        for(int i=0;i<arr.Count-1;i++){
+              Console.WriteLine(arr[i]);
+        }
+          return arr;
+    }
+    static void Main ()
+    {
+	    List < int >arr = new List < int >{ 10, 2, 3, 4, 11, 5, 6, 4 };
+	    // Console.WriteLine(reverseArr(arr));
+	    Console.WriteLine(sortList(arr));
+    }
+    }
+```
