@@ -386,6 +386,7 @@ because here we are passing the string and string is reference type but it is im
 ```
 
 ## Selection Sort
+
 ```C#
     using System;
     using System.Collections.Generic;
@@ -418,3 +419,40 @@ because here we are passing the string and string is reference type but it is im
     }
     }
 ```
+
+## Sliding window for finding sum subarray
+```C#
+    using System;
+    using System.Collections.Generic;
+    class HelloWorld
+    {
+    static void sortList (List < int >arr, int target)
+    {
+        int sum = 0;
+        int start = 0;
+        int end = 0;
+        int n = arr.Count;
+        while(end<n){
+            sum+=arr[end];
+            if(sum>target){
+                sum-=arr[start];
+                start++;
+            }
+            if(sum == target){
+                Console.WriteLine($"{start} {end}");
+            }
+            end++;
+        }
+    
+    }
+  
+
+    static void Main ()
+    {
+	    List < int >arr = new List < int >{ 10, 2, 3, 4, 11, 5, 6, 4 };
+	    // Console.WriteLine(reverseArr(arr));
+        sortList(arr, 7);
+    }
+    }
+```
+
