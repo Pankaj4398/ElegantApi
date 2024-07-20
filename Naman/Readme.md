@@ -1011,3 +1011,89 @@ Animal is eating
 Dog is eating
 Animal makes a sound
 Animal is eating
+
+
+## OOPs Concepts
+
+### Encapsulation
+Encapsulation is the mechanism of restricting access to certain detials of an object and only exposing specific aspects of the object.
+It has 3 components
+1. Access Modifiers
+2. Properties - Provides controlled access to private fields
+3. Methods - Encapsulates the behavior that operates on the internal state
+
+#### Access Modifiers
+1. Private: Members are accessible only within the same class
+2. Public: Members are accessible from any other class
+3. Protected: Members are accessible within the same class and in derived class
+4. Internal: Members are accessible within same assembly
+
+#### 
+```C#
+public class Person
+{
+    private string name; // Encapsulated field
+    private int age; // Encapsulated field
+
+    // Public property to access name
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
+    // Public property to access age
+    public int Age
+    {
+        get { return age; }
+        set
+        {
+            if (value > 0)
+            {
+                age = value;
+            }
+        }
+    }
+
+    public void Display()
+    {
+        Console.WriteLine($"Name: {Name}, Age: {Age}");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Person person = new Person();
+        person.Name = "John";
+        person.Age = 30;
+        person.Display();
+    }
+}
+```
+
+
+
+### Inheritance
+Inheritance is the mechanism by which one class can inherit the properties and methods of another class.
+
+
+## Why can't we use normal class instead of interface
+
+1. Interface defines a contract that implementing class must follow
+2. Interface allows changes in implementation without affecting other clients that are using interface
+3. Interface allows multiple inheritance
+4. Interface allows polymorphism or multiple implementations can be there for a interface
+
+
+
+## Difference between singleton, scoped and transient
+
+1. Singleton - Singleton service is created once per application lifetime and is reused whenever it is requested. Example: Configuration settings, logging services.
+2. Scoped - A Scoped service is created once per request(scope). Particularly useful for the web applications to give new instance of service for each http request. Example: Database contexts, unit of work patterns.
+3. Transient - A Transient service is created it is requested. Example: Lightweight stateless services, utility services.
+
+## SOLID Principles
+
+1. Single Responsibility - One 

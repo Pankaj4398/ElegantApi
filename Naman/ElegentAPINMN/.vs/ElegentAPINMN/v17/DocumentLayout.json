@@ -1,0 +1,623 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\elegentapinmn.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\elegentapinmn.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\controllers\\cartitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\controllers\\cartitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\mappings\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\mappings\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\repositories\\class\\cartitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\repositories\\class\\cartitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\repositories\\class\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\repositories\\class\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\repositories\\interface\\itokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\repositories\\interface\\itokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\repositories\\interface\\icartitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\repositories\\interface\\icartitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\data\\shopauthdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\data\\shopauthdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\domain\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\domain\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\repositories\\class\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\repositories\\class\\tokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\controllers\\discountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\controllers\\discountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\repositories\\class\\discountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\repositories\\class\\discountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\dto\\discountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\dto\\discountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\repositories\\interface\\idiscountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\repositories\\interface\\idiscountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\domain\\discount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\domain\\discount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\domain\\discountproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\domain\\discountproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\repositories\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\repositories\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\domain\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\domain\\paymentdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\domain\\paymentdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\domain\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\domain\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\domain\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\domain\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\domain\\shoppingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\domain\\shoppingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\elegentapinmn.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\elegentapinmn.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\migrations\\20240524203357_adding-discountproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\migrations\\20240524203357_adding-discountproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\migrations\\20240524203628_adding-discountproduct-final.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\migrations\\20240524203628_adding-discountproduct-final.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\migrations\\20240524190853_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\migrations\\20240524190853_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|c:\\projects\\shopapi\\elegantapi\\naman\\elegentapinmn\\elegentapinmn\\models\\dto\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD1DF11-1E25-4A2A-9B09-EE2750EDAF41}|ElegentAPINMN\\ElegentAPINMN.csproj|solutionrelative:elegentapinmn\\models\\dto\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T05:40:46.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Class\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Repositories\\Class\\ProductRepository.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Class\\ProductRepository.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Repositories\\Class\\ProductRepository.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T06:00:09.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T18:53:20.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Mappings\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Mappings\\MappingProfiles.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Mappings\\MappingProfiles.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Mappings\\MappingProfiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T07:08:42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\appsettings.json",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\appsettings.json",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\appsettings.json",
+              "RelativeToolTip": "ElegentAPINMN\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-24T17:17:25.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CartItemRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Class\\CartItemRepository.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Repositories\\Class\\CartItemRepository.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Class\\CartItemRepository.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Repositories\\Class\\CartItemRepository.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T05:48:28.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\DTO\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\DTO\\RegisterRequestDto.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\DTO\\RegisterRequestDto.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\DTO\\RegisterRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T20:47:54.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartItemController.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Controllers\\CartItemController.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Controllers\\CartItemController.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Controllers\\CartItemController.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Controllers\\CartItemController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwBkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T06:10:50.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Program.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Program.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Program.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T19:01:08.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICartItemRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Interface\\ICartItemRepository.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Repositories\\Interface\\ICartItemRepository.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Interface\\ICartItemRepository.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Repositories\\Interface\\ICartItemRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T05:46:34.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\CartItem.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\Domain\\CartItem.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\CartItem.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\Domain\\CartItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T06:09:59.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ElegentAPINMN.csproj",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\ElegentAPINMN.csproj",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\ElegentAPINMN.csproj",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\ElegentAPINMN.csproj",
+              "RelativeToolTip": "ElegentAPINMN\\ElegentAPINMN.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-27T07:49:23.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITokenRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Interface\\ITokenRepository.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Repositories\\Interface\\ITokenRepository.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Interface\\ITokenRepository.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Repositories\\Interface\\ITokenRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T05:16:16.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ShopAuthDbContext.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Data\\ShopAuthDbContext.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Data\\ShopAuthDbContext.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Data\\ShopAuthDbContext.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Data\\ShopAuthDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T05:44:01.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\DTO\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\DTO\\LoginRequestDto.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\DTO\\LoginRequestDto.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\DTO\\LoginRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T05:09:28.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T20:45:46.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TokenRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Class\\TokenRepository.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Repositories\\Class\\TokenRepository.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Class\\TokenRepository.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Repositories\\Class\\TokenRepository.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAMwBIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T05:20:11.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DiscountRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Class\\DiscountRepository.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Repositories\\Class\\DiscountRepository.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Class\\DiscountRepository.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Repositories\\Class\\DiscountRepository.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwBAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T11:01:03.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DiscountDto.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\DTO\\DiscountDto.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\DTO\\DiscountDto.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\DTO\\DiscountDto.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\DTO\\DiscountDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T15:01:56.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PaymentDetails.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\PaymentDetails.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\Domain\\PaymentDetails.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\PaymentDetails.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\Domain\\PaymentDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T18:35:18.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CartItemDto.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\DTO\\CartItemDto.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\DTO\\CartItemDto.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\DTO\\CartItemDto.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\DTO\\CartItemDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T06:09:54.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DiscountController.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Controllers\\DiscountController.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Controllers\\DiscountController.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Controllers\\DiscountController.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Controllers\\DiscountController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAuwCcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T11:37:02.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\Product.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\Domain\\Product.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\Product.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\Domain\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T09:44:49.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DiscountProduct.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\DiscountProduct.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\Domain\\DiscountProduct.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\DiscountProduct.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\Domain\\DiscountProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T20:31:42.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\DTO\\ProductDto.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\DTO\\ProductDto.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\DTO\\ProductDto.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\DTO\\ProductDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T05:47:16.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IDiscountRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Interface\\IDiscountRepository.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Repositories\\Interface\\IDiscountRepository.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Interface\\IDiscountRepository.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Repositories\\Interface\\IDiscountRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T10:47:11.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Discount.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\Discount.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\Domain\\Discount.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\Discount.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\Domain\\Discount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T11:55:09.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\appsettings.Development.json",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\appsettings.Development.json",
+              "RelativeToolTip": "ElegentAPINMN\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-24T19:18:41.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Interface\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Repositories\\Interface\\IProductRepository.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Repositories\\Interface\\IProductRepository.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Repositories\\Interface\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T05:58:19.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20240524203357_Adding-DiscountProduct.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Migrations\\20240524203357_Adding-DiscountProduct.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Migrations\\20240524203357_Adding-DiscountProduct.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Migrations\\20240524203357_Adding-DiscountProduct.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Migrations\\20240524203357_Adding-DiscountProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T20:33:57.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20240524203628_Adding-DiscountProduct-final.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Migrations\\20240524203628_Adding-DiscountProduct-final.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Migrations\\20240524203628_Adding-DiscountProduct-final.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Migrations\\20240524203628_Adding-DiscountProduct-final.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Migrations\\20240524203628_Adding-DiscountProduct-final.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T20:36:28.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20240524190853_Initial.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Migrations\\20240524190853_Initial.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Migrations\\20240524190853_Initial.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Migrations\\20240524190853_Initial.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Migrations\\20240524190853_Initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T19:08:54.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ShoppingSession.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\ShoppingSession.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\Domain\\ShoppingSession.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\ShoppingSession.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\Domain\\ShoppingSession.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T18:41:13.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OrderDetails.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\OrderDetails.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\Domain\\OrderDetails.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\OrderDetails.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\Domain\\OrderDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T18:32:01.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\Users.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\Domain\\Users.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\Users.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\Domain\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T18:29:24.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "OrderItems.cs",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\OrderItems.cs",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\Models\\Domain\\OrderItems.cs",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\Models\\Domain\\OrderItems.cs",
+              "RelativeToolTip": "ElegentAPINMN\\Models\\Domain\\OrderItems.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T17:49:28.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ElegentAPINMN.http",
+              "DocumentMoniker": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\ElegentAPINMN.http",
+              "RelativeDocumentMoniker": "ElegentAPINMN\\ElegentAPINMN.http",
+              "ToolTip": "C:\\Projects\\ShopAPI\\ElegantApi\\Naman\\ElegentAPINMN\\ElegentAPINMN\\ElegentAPINMN.http",
+              "RelativeToolTip": "ElegentAPINMN\\ElegentAPINMN.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-05-24T17:17:07.497Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ using ElegentAPINMN.Data;
 using ElegentAPINMN.Models.Domain;
 using ElegentAPINMN.Models.DTO;
 using ElegentAPINMN.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
