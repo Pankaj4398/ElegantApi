@@ -1,1 +1,18 @@
-<p>navbar works!</p>
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <form class="example-form">
+        <input type="text"
+               placeholder="Search for a street"
+               [formControl]="control"
+               [matAutocomplete]="auto"
+               class="example-input">
+        <mat-autocomplete #auto="matAutocomplete">
+          @for (street of filteredStreets | async; track street) {
+            <mat-option>{{street}}</mat-option>
+          }
+        </mat-autocomplete>
+      </form>
+    <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>

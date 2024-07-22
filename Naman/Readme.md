@@ -1097,3 +1097,171 @@ Inheritance is the mechanism by which one class can inherit the properties and m
 ## SOLID Principles
 
 1. Single Responsibility - One 
+
+
+
+
+# Basics of Angular and javascript
+
+### What are building blocks of angular application
+
+1. Modules - Modules are container for holding the block of code
+
+```Typescript
+// app.module.ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+```
+1.1. declaration - contains all the components that are part of this module
+1.2. imports - other modules that this module has a dependency on
+1.3. providers - contains all the services whose single instance would be available in this module
+
+2. Component - Components are basic building block of the angular application they hold the template and logical part associated with it
+
+```Typescript
+// app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'My Angular App';
+}
+```
+
+3. Templates - Templates are HTML structures associated with the component
+
+```HTML
+<!-- app.component.html -->
+<h1>{{ title }}</h1>
+<button (click)="doSomething()">Click Me</button>
+```
+
+4. Directives - They are used to add behavior to the elements in angular component- three types- component, structural and attribute
+
+```Typescript
+// example.directive.ts
+import { Directive, ElementRef, Renderer2, HostListener } from '@angular/core';
+
+@Directive({
+  selector: '[appHighlight]'
+})
+export class HighlightDirective {
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.renderer.setStyle(this.el.nativeElement, 'backgroundColor', 'yellow');
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.renderer.removeStyle(this.el.nativeElement, 'backgroundColor');
+  }
+}
+```
+
+5. Services - Services are classes that are used to provide a functionality or are used to share the data among the components
+    Dependency injection - Angular uses dependency injection to provide instance of service across the application
+    Singleton - A single instance of service is shared among the components in the angular application
+
+```Typescript
+// example.service.ts
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ExampleService {
+  getData() {
+    return 'Data from service';
+  }
+}
+```
+
+6. Pipes - Pipes are used to transform the data in the templates, two types - built-in and custom pipes
+
+```Typescript
+// custom.pipe.ts
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'customPipe'
+})
+export class CustomPipe implements PipeTransform {
+  transform(value: string): string {
+    return value.toUpperCase();
+  }
+}
+```
+
+7. Routing - Angular router modules helps in configuration of routes
+
+8. Forms - Template driven form and Reactive forms
+
+
+### What are directives and different types of directives?
+Directives allows you to add behavior to the HTML elements, manipulate DOM or create reusable components.
+There are 3 types of directives - 
+1. Component Directive - Contains HTML template and logical Typescript class
+
+```Typescript
+// example.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  template: `<h1>{{ title }}</h1>`,
+  styles: [`h1 { color: blue; }`]
+})
+export class ExampleComponent {
+  title = 'Hello, World!';
+}
+```
+
+2. Structural Directive - They are used to add or remove the elements from DOM. eg - *ngIf, *ngFor, *ngSwitch
+
+```Typescript
+<!-- example.component.html -->
+<div *ngIf="isVisible">This element is visible</div>
+```
+
+```Typescript
+<!-- example.component.html -->
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+```
+
+3. Attribute directive - They are used to change the behavior or appearance of the element
+
+```Typescript
+// highlight.directive.ts
+import { Directive, ElementRef, Renderer2, HostListener } from '@angular/core';
+
+@Directive({
+  selector: '[appHighlight]'
+})
+export class HighlightDirective {
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.renderer.setStyle(this.el.nativeElement, 'backgroundColor', 'yellow');
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.renderer.removeStyle(this.el.nativeElement, 'backgroundColor');
+  }
+}
+```
