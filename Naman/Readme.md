@@ -1102,6 +1102,11 @@ Inheritance is the mechanism by which one class can inherit the properties and m
 
 
 # Basics of Angular and javascript
+    
+
+### What is angular?
+
+Angular is a typescript based open source front-end platform that makes it easy to build web, mobile and desktop applications.
 
 ### What are building blocks of angular application
 
@@ -1265,3 +1270,92 @@ export class HighlightDirective {
   }
 }
 ```
+### Angular lifecycle hooks
+
+There are 8 lifecycle hooks in angular 
+
+ngOnInit is called when component initialize. It is called once. Mostly, I used for variable initialize and API call. ngOnDestroy is called before detroying the component. I heavily used for unsubscribe the subscription to prevent the memory leak.
+
+Several times I have used ngOnChanges, ngAfterContentInit, ngAfterViewInit in my career. ngOnChanges method is called once on component’s creation and then every time changes are detected in one of the component’s input properties. It receives a SimpleChanges object as a parameter. ngAfterViewInit is called after the component view and its child views has been initialized. ngAfterContentInit is called after components external content (or from parent ) has been initialized.
+
+There are other hooks like ngDoCheck, ngAfterContentChecked, ngAfterViewChecked, I did not use them too much.
+
+### Data binding in angular
+
+#### From component to DOM
+
+##### Interpolation 
+
+{{value}} used to add value of a property from the component
+
+##### Property binding
+
+[property] = "value" value is passed from component to the specified property
+
+#### From DOM to component
+
+##### Event binding
+
+(event) = "function" when a specific event occurs call the specified function
+
+#### Two way binding
+
+[(ngModel)] = "value" allows data to flow both ways from DOM to component and vice versa
+
+
+### What is metadata
+
+Metadata is used to decorate a class so that it can configure the expected behavior of the class.
+
+Types- 
+1. Class decorators - @Component, @Module
+2. Property decorators - @Input, @Output
+3. Method decorators - @HostListener
+
+
+### What is the difference between constructor and ngOnInit
+
+Both constructor and ngOnInit lifecycle hook are used to initialize the component but they serve different purpose and are used in different contexts.
+
+#### Constructor
+
+The constructor is a special method in a class that is called when an instance of the class is created. In angular it is used for initialization tasks and for injecting dependencies via Angular's dependency injection
+
+Constructor runs befor angular has fully initialized the component and before the component's input properties are set
+
+#### NgOnInit
+
+It is a lifecycle hook and is called after angular has fully initialized the component, including its input properties
+
+ngOnInit runs after the constructor and after angular has set all the input properties of the component
+
+
+### What are services
+
+Services are used to share business logic, data access or any reusable functionality among different components of an application.
+Angular uses DI to provide instances of services to components or other services. This promotes loose coupling.
+Services are ofter singleton, meaning that angular creates single instance of the service and shares it across the application.
+
+```Typescript
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService {
+  private data: string[] = ['Item 1', 'Item 2', 'Item 3'];
+
+  getData(): string[] {
+    return this.data;
+  }
+
+  addData(item: string): void {
+    this.data.push(item);
+  }
+}
+```
+If you want to create different instance of the service for different components then in providers array of both components add the service to create different instance of the service for both the components
+
+### What is dependency injection in angular
+
+Dependency injection is a design pattern in which a class asks for dependencies from external source rather creating them itself. This helps in efficient management of services and other dependencies across the application.
