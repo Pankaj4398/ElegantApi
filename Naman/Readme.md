@@ -1359,3 +1359,105 @@ If you want to create different instance of the service for different components
 ### What is dependency injection in angular
 
 Dependency injection is a design pattern in which a class asks for dependencies from external source rather creating them itself. This helps in efficient management of services and other dependencies across the application.
+
+DI works with @Injectable decorator which marks a class as a service that can be injected into other classes. When class is declared as dependency angular injector looks up the provider for that dependency and supplies an instance of it.
+
+### Pipes in angular
+
+Pipes allows you to transform data within your templates they are used to format, transform or manipulate data for display pupose without altering the underlying data model
+
+Built in pipes - 
+DatePipe: Formats a date value according to locale rules.
+UpperCasePipe: Transforms text to uppercase.
+LowerCasePipe: Transforms text to lowercase.
+CurrencyPipe: Formats a number as currency.
+DecimalPipe: Formats a number as decimal.
+PercentPipe: Formats a number as a percentage.
+JsonPipe: Converts a value into a JSON string.
+SlicePipe: Creates a new array or string containing a subset (slice) of the elements.
+
+### Async pipe 
+
+Async pipe in angular is a special pipe that automatically subscribes to an observable or promise and returns the latest value it has emitted.
+
+### What happen if you use script tag inside template
+
+To prevent cross site scripting angular sanitizes the content and removes the script tag
+
+### Difference between pure and impure pipes
+
+Pure pipes are default type of pipes in Angular, they are called only when the inputs to the pipe changes
+
+Impure pipes are executed during every change detection cycle, regardless of input value change
+
+
+### What are observables
+
+observables are concept for handling asynchronous data and events they are more flexible then the promises and callbacks
+An observable is a stream of data that can emit multiple values over time
+
+### What are different rxjs operators
+
+1. of(value1, value2, ...): Creates an observable that emits the provided arguments as values
+2. map(fn): Applies a function to each emitted value and emits the transformed value
+3. filter(fn): Only emits the value passed by the test in the provided function
+
+### What is subscribing
+
+subscribing is listening and reacting to the stream of data emitted by an observable.
+When you subscribe to an observable you provide an observer object. This observer decides how you want to handle the data with three callback functions
+next(value): this is called and obseervable emits a new value
+error(error): this is called when observable encounters an error
+complete(): this is called and observable has finished emitting the data, you can use this to unsubscribe the observable
+
+
+### What are dynamic components
+
+These are components that are created and inserted into the view at runtime rather than deing defined statically in the template
+
+eg.
+```Typescript
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-message',
+  template: `
+    <p>{{ message }}</p>
+  `
+})
+export class MessageComponent {
+  @Input() message: string = '';
+}
+```
+
+```Typescript
+import { Component, ViewChild, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
+import { MessageComponent } from './message.component';
+
+@Component({
+  selector: 'app-parent',
+  template: `
+    <button (click)="showMessage()">Show Message</button>
+    <div #messageContainer></div>
+  `
+})
+export class ParentComponent {
+  @ViewChild('messageContainer', { read: ViewContainerRef }) container: ViewContainerRef;
+
+  constructor(private componentFactoryResolver: ComponentFactoryResolver) {}
+
+  showMessage() {
+    const message = 'This is a dynamically created message!';
+
+    // Create component factory
+    const factory = this.componentFactoryResolver.resolveComponentFactory(MessageComponent);
+
+    // Create component instance
+    const componentRef = this.container.createComponent(factory);
+
+    // Set message input
+    componentRef.instance.message = message;
+  }
+}
+```
+
