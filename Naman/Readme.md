@@ -1461,3 +1461,120 @@ export class ParentComponent {
 }
 ```
 
+
+### JS arrays
+
+An array is a spoecial type of object used to store multiple values in a single variable.
+They are dynamic meaning they can grow and shrink in size.
+
+creating an array- 
+let array = [1,2,3,4]
+
+accessing the element
+console.log(array[0]);
+
+modifying the element
+array[1]=5;
+
+#### Properties of array
+
+1. length - returns number of elements in the array
+
+```javascript
+let array = [1,2,3,4];
+console.log(array.length);
+```
+
+2. push - adds one or more elements to the end of the array and returns new length of the array
+
+```javascript
+let array = [1,2,3];
+array.push(4);
+console.log(array) // [1,2,3,4]
+```
+
+3. pop - removes the last element from the array and returns that element 
+
+```javascript
+let array = [1,2,3];
+let lastElement = array.pop();
+console.log(array) // [1,2]
+console.log(lastElement) // 3
+```
+
+4. shift - removes the first element from the array and returns that element
+
+```javascript
+let array = [1,2,3];
+let firstElement = array.shift();
+console.log(array) //[2,3]
+console.log(firstElement) //1
+```
+
+5. unshift - adds one or more elements to the beginning of an array and returns the new length of the array
+
+```javascript
+let array = [1,2,3];
+array.unshift(0);
+console.log(array) //[0,1,2,3]
+```
+
+6. splice - used to add and remove the elements from the array
+
+```javascript
+const fruits = ["banana", "orange", "apple", "mango"];
+fruits.splice(2,0,"lemon", "kiwi");
+console.log(fruits) //["banana", "orange","lemon", "kiwi", "apple", "mango"]
+```
+
+first param 2 defines position where the new element should be added
+second param 0 defines how many elements should be removed
+rest params (lemon, kiwi) defines the new elements to be added
+
+splice returns the removed elements
+
+
+7. slice - used to slice out a piece of array
+
+```javascript
+const fruits = ["banana", "orange", "apple", "mango"];
+const citrus = fruits.slice(1);
+console.log(citrus) //["orange"]
+console.log(fruits) // ["banana", "orange", "apple", "mango"]
+
+const fav = fruits.slice(2,3);
+console.log(fav)// ["apple", "mango"]
+```
+
+8. toString - converts an array to a comma separated string 
+
+```javascript
+const fruits = ["banana", "orange", "apple", "mango"];
+console.log(fruits.toString()); //Banana,Orange,Apple,Mango
+```
+
+9. join - used to join all array elements in a single string
+
+```javascript
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+
+result - Banana * Orange * Apple * Mango
+```
+10. concat - used to join two arrays
+
+```javascript
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+
+const myChildren = myGirls.concat(myBoys); //["Cecilie", "Lone", "Emil", "Tobias", "Linus"];
+```
+
+
+
+#### how to check if the datatype of the object is array
+use the function 
+Array.isArray(fruits);
+
+
+
