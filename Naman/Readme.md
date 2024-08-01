@@ -62,7 +62,6 @@ It is the entry point of the application, here we add the dependencies used in o
 ### Middleware
 Middleware are the softwares which are added in the project pipeline to handle request and responses
 
-
 ### REST (Representational State Transfer)
 1. It is a style of architecture for building web services.
 2. REST is a set of principles that define how services should be designed and interact with each other.
@@ -222,6 +221,28 @@ The process to determine a user's identity using username and password, it check
             options.Password.RequiredUniqueChars = 1;
         });
     ```
+
+
+## CORS
+
+Cross-Origin Reasource Sharing is a security feature implemented by web browsers to allow or restrict resources(such as HTML, CSS, JS, fonts and APIs) to be requested from a domain different from the domain from which the resource originated.
+
+Same-Origin Policy(SOP) - enforced by browsers to restrict how documents or scripts loaded from one origin can interact with resources from another origin.
+
+CORS Mechanism - CORS provides a way for a server to allow some cross-origin requests while still protecting its resources. It works by using HTTP headers to tell the browser whether to allow or deny a request from a different origin.
+
+Key CORS Headers:
+
+1. Access-Control-Allow-Origin: Specifies which origins are allowed to access the resource.
+2. Access-Control-Allow-Methods: Indicates which HTTP methods are allowed (e.g., GET, POST).
+3. Access-Control-Allow-Headers: Specifies which headers can be used during the actual request.
+4. Access-Control-Allow-Credentials: Indicates whether credentials (such as cookies) are allowed to be sent in the cross-origin request.
+5. Access-Control-Expose-Headers: Lists headers that are safe to expose to the API of a CORS API specification.
+
+Example - 
+- A JS application on 'http://example.com' makes request to 'http://api.example.org'.
+- The browser first sends a preflight requesrt to 'http://api.example.org'.
+- If the server responds with appropriate CORS headers, the browser allows the actual request to proceed.
 
 
 ## Class, methods and property
@@ -635,6 +656,7 @@ Constructors are special functions that are called when an instance of a class i
 4. Constructor can have access modifier.
 
 ### Type of constructors
+
 #### Default contructor
 A constructor with no parameter, if no constructor is defined then compiler creates own default constructor.
 
@@ -1016,8 +1038,11 @@ Animal is eating
 ## OOPs Concepts
 
 ### Encapsulation
+
 Encapsulation is the mechanism of restricting access to certain detials of an object and only exposing specific aspects of the object.
+
 It has 3 components
+
 1. Access Modifiers
 2. Properties - Provides controlled access to private fields
 3. Methods - Encapsulates the behavior that operates on the internal state
@@ -1027,6 +1052,95 @@ It has 3 components
 2. Public: Members are accessible from any other class
 3. Protected: Members are accessible within the same class and in derived class
 4. Internal: Members are accessible within same assembly
+
+### Inheritance
+
+#### Sealed class
+
+To restrict a class from being used as a base class we use sealed class in this way this class is protected from any extension.
+
+A method can also be marked as sealed but first the method must be overridden in the derived class then only you can mark it as sealed.
+
+```C#
+public class BaseClass
+{
+    public virtual void Display()
+    {
+        Console.WriteLine("Base class display method.");
+    }
+}
+
+public class DerivedClass : BaseClass
+{
+    public sealed override void Display()
+    {
+        Console.WriteLine("Derived class sealed display method.");
+    }
+}
+
+public class FurtherDerivedClass : DerivedClass
+{
+    // The following would cause a compilation error
+    // public override void Display() { }
+}
+```
+
+
+
+#### Static class
+
+A static class cannot be instantiated and cannot serve as a base class
+
+all members inside the static class must also be static 
+
+```C#
+public class MyClass
+{
+    public static int MyStaticField = 10;
+    public static int MyStaticMethod()
+    {
+        return MyStaticField;
+    }
+}
+
+// Usage
+int value = MyClass.MyStaticMethod();
+```
+
+
+
+### Abstraction
+
+Hiding complex implementation details and exposing only the necessary features or behaviors to the outside world. It is achieved through abstract class, interface and access modifiers
+
+#### Abstract class
+
+- Used as a base class, cannot instantiated, provide blueprint for derived class
+- Contains both declaration and definition of methods
+- Contains methods, fields, constructor and other class members
+- Does not support multiple inheritance
+- Not full abstraction
+
+#### Interface 
+
+- contains only declaration of methods (abstract methods only)
+- contains only methods
+- supports multiple inheritance
+- full abstraction
+
+
+
+### Polymorphism
+
+ability of variable, objects, funcitons to take on multiple forms
+
+#### Overloading
+
+Method overloading is a feature in C# that allows you to define multiple methods with same name but different signature including number, types, order of parameters
+
+#### Overriding
+
+Occurs between parent and child classes, virtual for base class and override for child class
 
 #### 
 ```C#
@@ -1075,8 +1189,18 @@ class Program
 
 
 
-### Inheritance
-Inheritance is the mechanism by which one class can inherit the properties and methods of another class.
+
+
+## string and stringBuilder
+
+A string is a collection or an array of characters. So, string can be created using a char array or accessed like a char array.
+
+A string is immutable in c#. It means it is read-only and cannot be changed once created in memory. Each time you change a string .NET CLR will create a new memory location for the concatenated string.
+
+StringBuilder doesn't create a new object in the memory but dynamically expands memory to accomodate the modified string.
+
+
+
 
 
 ## Why can't we use normal class instead of interface
@@ -1096,13 +1220,34 @@ Inheritance is the mechanism by which one class can inherit the properties and m
 
 ## SOLID Principles
 
-1. Single Responsibility - One 
+1. Single Responsibility - A class should be responsible for only oner single task
+2. Open/Close Principle - A class should be open for extension and closed for modification
+3. Liskov's Sbustitution principle - objects of super class should be repleacable by the objects of sub class
+4. Interface Segregation - Interfaces should be made so that no base class use to implement unnecessary methods
+5. Dependency Inversion Principle - High level modules should not be dependent on the low level modules. Both should depend on abstraction
+
+## APIs
+
+### What is an API?
+API(Applcation Programming Interface) is a set of rules and protocols for building and interacting with software applications. It defines methods and data format that applications use to interact with external system or services. It allows developers to use the functionalities of other applications without needing to understand their internal working.
+
+### Types of APIs
+#### REST(Representational State Transfer)
+1. Uses standard HTTP methods.
+2. Stateless Architecture.
+3. Resources identified by URLs.
+4. Widely used due to simplicity and scalability.
+
+#### SOAP(Simple Access Object Protocol)
+1. Protocol for exchanging structured information.
+2. Relies on XML.
+3. Supports complex operations and higher security.
+
+#### GraphQL
 
 
 
-
-# Basics of Angular and javascript
-    
+# Basics of Angular and javascript    
 
 ### What is angular?
 
@@ -1854,3 +1999,116 @@ function intersectArr(arr1, arr2){
 
 console.log(intersectArr(arr, arr2));
 ```
+
+
+## SQL
+
+### SELECT 
+to select data from the table
+```SQL
+SELECT CustomerName, city from Customers;
+```
+
+### SELECT DISTINCT
+to select distinct values 
+```SQL
+SELECT DISTINCT Country from Customers;
+```
+
+### INSERT 
+to add data in the table
+```SQL
+INSERT INTO Customers (CustomerName, Contact)
+VALUES
+('Ram', '00000'),
+('Shyam', '11111')
+```
+
+### NULL Value
+A field with a NULL value is a field with no value
+If a field is optional, it is possible to not insert a value in this field then the field will be saved with NULL value
+
+#### Check if NULL value or not
+```SQL
+SELECT column_names from table_name where column_name IS NULL
+select column_names from table_name where column_name IS NOT NULL
+```
+
+### UPDATE 
+to modify a existing record
+```SQL 
+UPDATE table_name set column1 = value1, column2 = value2, ...
+where condition
+```
+If you are not using the where clause then all the rows data will update
+
+### DELETE
+used to delete an existing record
+```SQL
+DELETE FROM table_name WHERE condition
+```
+if delete is used without condition then all data will be deleted 
+
+### TRUNCATE
+removes all rows from a table resetting it to empty table
+```SQL
+TRUNCATE TABLE table_name
+```
+
+#### Difference between truncate and delete
+1. In delete you can have a condition but not in truncate
+2. Truncate resets the auto-increment column counter to starting value whereas on delete it does not reset when you remove all the rows
+3. Truncate is faster than delete
+
+### SELECT TOP
+Used to specify the number of records to return
+```SQL
+SELECT TOP 3 * FROM Customer;
+```
+
+### Aggregate functions
+Aggregate function is a function is used with GROUP BY clause of the SELECT statement.
+The GROUP BY clause splits the result-set into groups of values and the aggregate function can be used to return a single value for each group
+- MIN() - returns the smallest value within the selected column
+- MAX() - returns the largest value within the selected column
+- COUNT() - returns the number of rows in a set
+- SUM() - returns the total sum of a numerical column
+- AVG() - returns the average value of a numerical column
+
+Aggregate functions ignore the NULL value except for count
+
+```SQL
+SELECT COUNT(*) AS [Number of records], CategoryID
+FROM Products
+GROUP BY CategoryID;
+```
+
+### EXIST Operator
+used to test for existence of any record in a subquery
+returns true if the subquery returns one or more records
+
+```SQL
+SELECT column_name
+FROM table_name
+WHERE EXISTS
+(SELECT column_name FROM table_name WHERE condition);
+```
+
+### ANY Operator
+used to compare value to any value in a list or subquery
+
+```SQL
+SELECT column1, column2, ...
+FROM table1
+WHERE column1 comparison_operator ANY (subquery)
+```
+
+### ALL Operator
+
+ALL means that the condition will be true only if the operatio is true for all values in the range
+
+```SQL
+SELECT column1, column2
+FROM table1
+WHERE column1 comparision_operator ALL (subquery)\
+
