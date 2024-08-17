@@ -1,0 +1,15 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 1;
+  }
+.home-container{
+    .body-container{
+        max-height: 90vh;
+        overflow-y: scroll;
+    }
+}

@@ -1538,8 +1538,45 @@ Impure pipes are executed during every change detection cycle, regardless of inp
 
 ### What are observables
 
-observables are concept for handling asynchronous data and events they are more flexible then the promises and callbacks
-An observable is a stream of data that can emit multiple values over time
+Observables are concept for handling asynchronous data and events they are more flexible then the promises and callbacks
+An observable is a stream of data that can emit multiple values over time.
+```Typescript
+import {Observable} from "rxjs";
+
+... 
+
+const myObservable = new Observable( observer =>{     
+   let value = 0;
+   setInterval ( () =>
+   {
+      observer.next(value); //this is what sends a new value
+      value = value + 10;
+      if(value > 50){
+         observer.complete(); //finish sending values
+       }
+    }  ,1000 );
+  }
+  );
+
+myObservable.subscribe(
+   val=> console.log(val), //for a value returned
+   error => console.log("problem"), //if something happens
+   () => console.log("Done")
+   ); //once it is done
+
+myObservable.subscribe( {
+      next: val => console.log("Second:" + val),
+      error: error => console.log(error),
+      complete: () => console.log("Completed")
+   } );
+
+```
+
+With the above code both subscriptions are going to get the values independently. Sometimes, instead of starting an independent execution for each subscriber, you want each subscription to get the same values, even if the values have already started emitting. In this case you will need multicast.
+
+### What are subjects
+
+
 
 ### What are different rxjs operators
 

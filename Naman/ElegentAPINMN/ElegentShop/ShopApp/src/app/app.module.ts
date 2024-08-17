@@ -9,21 +9,34 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { AsyncPipe } from '@angular/common';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthService } from './interceptor/auth.service';
+import { LoginComponent } from './user/login/login.component';
+import { FooterComponent } from '../shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, MatAutocompleteModule, ReactiveFormsModule, AsyncPipe
-
+    FormsModule,
+    MatAutocompleteModule, 
+    ReactiveFormsModule, 
+    AsyncPipe
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthService,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

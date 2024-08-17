@@ -1,1 +1,12 @@
-<app-home></app-home>
+<div class="home-container">
+    <div class="header-container">
+        <app-home></app-home>
+    </div>
+    <div class="body-container">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="footer-container">
+        <app-footer [footerText]="'ELEGENT INC'"></app-footer>
+    </div>
+</div>
+
